@@ -1,8 +1,8 @@
 <!-- These are here just to show the structure of the list items -->
-<li class="completed">
+<li [class.completed]="todo.completado">
   <div class="view">
     <input class="toggle" type="checkbox" checked />
-    <label>Taste JavaScript</label>
+    <label>{{ todo.texto }}</label>
     <button class="destroy"></button>
   </div>
   <input class="edit" value="Create a TodoMVC template" />
