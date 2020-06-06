@@ -4,5 +4,7 @@
     class="new-todo"
     placeholder="¿Qué tareas necesitas realizar?"
     autofocus
+    [formControl]="txtInput"
+    (keyup.enter)="agregar()"
   />
 </header>
